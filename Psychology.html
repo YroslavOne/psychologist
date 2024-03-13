@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loginova</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/Psychology.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<header id="header_fix">
+		<div class="wrapper">
+			<div class="header__wrapper">
+				<div class="VK">
+					<a href="isInfoPopupVisible" class="header__VK__link" id="header__VK__link">
+						Я Вконтакте
+					</a>
+				</div>
+				<div class="flex-end">
+					<div class="phone">
+						<img id="phone" src="./img/svg/Phone.svg" alt="Phone">
+					</div>
+					<a href="#!" class="number" id="number">
+						8 (923) 100 10 01
+					</a>
+					<button @click="open" class="knopka">Записаться на консультация</button>
+				</div>
+			</div>
+			<div class="logo">
+				<div class="logo_flex">
+					<img src="./img/logo.svg" alt="logo">
+					<div class="logo__svetlana">
+						<h1 class="text__logo__h1" id="text__logo__h1">
+							ЛОГИНОВА СВЕТЛАНА
+						</h1>
+						<p class="logo__text" id="logo__text">
+							Детский психолог в Новосибирске
+						</p>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="isInfoPopupVisible" class="header__link" id="header__link">Обо мне</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link" id="header__link">Отзывы</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link" id="header__link">Услуги и цены</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link" id="header__link">Методы</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link" id="header__link">Видеолекции</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link" id="header__link">Статьи</a>
+						</li>
+						<li class="header__item">
+							<a href="#!" class="header__link" id="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+
+
+	</header>
+	<nav>
+		<div class="navbar" id="header-mob-bar">
+			<div class="container nav-container">
+				<input class="checkbox" type="checkbox" onclick="mainblack()" name="" id="checkbox" />
+				<div class="hamburger-lines">
+					<span id="line-mob-line" class="line line1"></span>
+					<span id="line-mob-line" class="line line2"></span>
+					<span id="line-mob-line" class="line line3"></span>
+				</div>
+				<div class="logo_top_menu_mob">
+					<button @click="open" class="knopka_top_menu_mob">Записаться на консультация</button>
+				</div>
+				<div class="menu-items">
+					<div name="slide" class="slide">
+						<li class="line" href="#">Обо мне</li>
+						<li class="line" href="#">отзывы</li>
+						<li class="line" href="#">уcлуги и цены</li>
+						<li class="line" href="#">методы</li>
+						<li class="line" href="#">ВИДЕОЛЕКЦИИ</li>
+						<li class="line" href="#">Статьи</li>
+						<li class="line" href="#">КОНТАКТЫ</li>
+					</div>
+					<div>
+						<div class="main-buttim">
+							<div class="inline-vk">
+								<div class="VK">
+									<a href="#" class="header__VK__link_mob">
+										Я Вконтакте
+									</a>
+								</div>
+								<div class="flex-end">
+									<div class="phone_mob">
+									</div>
+									<div href="#!" class="number_mob">
+										8 (923) 100 10 01
+									</div>
+								</div>
+							</div>
+							<div>
+								<div @click="open" class="knopka-buttom-menu">Записаться на консультация</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="home">
+		<main class="main">
+			<section class="intro">
+
+				<div class="wrapper wrapper_one">
+					<h1 class="intro__title">Детский психолог в Новосибирске</h1>
+					<div class="marker">
+						<ul>
+							<li><span>🟆</span> Тревожность, застенчивость, боязливость</li>
+							<li><span>🟆</span> Агрессия и другие проблемы поведения</li>
+							<li><span>🟆</span> Пережитые психотравмирующие ситуации</li>
+						</ul>
+						<button @click="open" class="knopka">Записаться на консультация</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<section class="about">
+		<div class="wrapper_about">
+			<h2 class="about__me">
+				ОБО МНЕ
+			</h2>
+			<div class="about__grids">
+				<div class="about__grid">
+					<div class="log__photo">
+					</div>
+				</div>
+				<div class="about__grid">
+					<h1 class="log__title">
+						Логинова Светлана Васильевна
+					</h1>
+					<p class="log__text">
+						Работаю с детьми и семьями с 2013 года, имею ученую степень кандидата психологических наук. За
+						это время соприкоснулась с жизнями сотен детей: помогала каждому адаптироваться в обществе,
+						переживать потери, бороться со&nbsp;страхами, развивать внутреннюю силу и устойчивость, находить
+						общий язык со сверстниками и членами семьи, чувствовать опору внутри себя и оказывать
+						самоподдержку в трудные моменты.
+					</p>
+					<div class="center_button_about">
+						<button @click="open" class="about_me_button">Подробнее обо мне</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="i__can__help">
+		<div class="wrapper__1">
+			<h1 class="what__i__can">
+				ЧЕМ Я МОГУ ПОМОЧЬ?
+			</h1>
+			<div class="info__cards">
+				<div class="info__card card">
+					<div class="card__photo">
+						<img src="./img/svg/card1__photo.svg" alt="card">
+					</div>
+					<h2 class="card__h2">
+						Индивидуальные консультации
+					</h2>
+					<p class="card__p">
+						Очные консультации проходят в кабинете, специально оборудованном для приема детей: имеются
+						карандаши, краски.
+					</p>
+				</div>
+				<div class="info__card card">
+					<div class="card__photo">
+						<img src="./img/svg/card2__photo.svg" alt="card">
+					</div>
+					<h2 class="card__h2">Подготовка детей к школе</h2>
+					<p class="card__p">
+						Эта программа — прекрасная возможность подготовиться к усвоению школьных знаний и навыков и
+						избежать возможных трудностей.
+					</p>
+				</div>
+				<div class="info__card card">
+					<div class="card__photo">
+						<img src="./img/svg/card3__photo.svg" alt="card">
+					</div>
+					<h2 class="card__h2">
+						Тренинги для родителей
+					</h2>
+					<p class="card__p"> Групповая работа со специальными упражнениями, позволяющими достигнуть
+						эффективного. Анализ семейных ситуаций в группе помогает. </p>
+				</div>
+			</div>
+			<div class="knopka_1 ">
+
+				<button class="knopka_job">Записаться на консультация</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="job">
+		<div class="wrapper__2">
+			<h1 class="jobs">
+				МЕТОДЫ РАБОТЫ
+			</h1>
+			<div class="job__cards">
+				<div class="jobs__card">
+					<div class="jobs__card__photo">
+						<div class="card__photo1"></div>
+					</div>
+					<h2 class="jobs__card__h2">
+						Песочная терапия
+					</h2>
+					<p class="jobs__card__p">
+						Сочинение игровых сюжетов, связанных с проблемой ребенка, в песочнице с использованием
+						специально подобранных миниатюрных фигурок и природных.
+					</p>
+				</div>
+				<div class="jobs__card">
+					<div class="jobs__card__photo">
+						<div class="card__photo2"></div>
+					</div>
+					<h2 class="jobs__card__h2">
+						Арт-терапия
+					</h2>
+					<p class="jobs__card__p">
+						Различные виды творческой деятельности: рисование гуашью, акварелью, пальчиковыми красками,
+						лепка из глины, пластилина, изготовление коллажей.
+					</p>
+				</div>
+				<div class="jobs__card">
+					<div class="jobs__card__photo">
+						<div class="card__photo3"></div>
+					</div>
+					<h2 class="jobs__card__h2">
+						Игровая терапия
+					</h2>
+					<p class="jobs__card__p">
+						Специально организованная игра ребенка с психологом, в процессе которой ребенок освобождается от
+						тревожащих его переживаний и осваивает новые формы поведения.
+					</p>
+				</div>
+				<div class="jobs__card">
+					<div class="jobs__card__photo">
+						<div class="card__photo4"></div>
+					</div>
+					<h2 class="jobs__card__h2">
+						Сказкотерапия
+					</h2>
+					<p class="jobs__card__p">
+						Чтение, проигрывание специально сочинённых для ребёнка психотерапевтических сказок, составление
+						историй совместно с ребёнком.
+					</p>
+				</div>
+				<div class="jobs__card">
+					<div class="jobs__card__photo">
+						<div class="card__photo5"></div>
+					</div>
+					<h2 class="jobs__card__h2">
+						Нейропсихоло&shy;гическая коррекция
+					</h2>
+					<p class="jobs__card__p">
+						Двигательные, дыхательные, релаксационные и когнитивные упражнения, стимулирующие развитие
+						различных отделов.
+					</p>
+				</div>
+				<div class="jobs__card">
+					<div class="jobs__card__photo">
+						<div class="card__photo6"></div>
+					</div>
+					<h2 class="jobs__card__h2">
+						Телесная терапия
+					</h2>
+					<p class="jobs__card__p">
+						Выполнение специально разработанных упражнений для снятия телесного напряжения и улучшения
+						психического самочувствия ребенка.
+					</p>
+				</div>
+			</div>
+			<div class="knopka_1">
+				<button class="knopka_job_card">Записаться на консультация</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="article">
+		<div class="wrapper_about">
+			<h1 class="article__title">
+				ПОЛЕЗНЫЕ СТАТЬИ
+			</h1>
+			<div class="title__grids">
+				<div class="title__grid">
+					<div class="title__photo">
+						<a href="#!" class="">
+						</a>
+						<div class="flag__top">
+							<div class="flag">
+								<h6 class="month">
+									янв
+								</h6>
+								<p class="date">
+									23
+								</p>
+							</div>
+						</div>
+						<div class="title__txt">
+							<h2 class="title__h2_big">
+								Заголовок заголовчатый с буквами
+							</h2>
+							<p class="title__txt_1">
+								Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке смешаны с не
+								уникальными данными до степени совершенной неузнаваемости.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="title_flex">
+					<div class="title__grid1">
+						<div class="title__photo1 title__photo_1">
+							<a href="#!" class="">
+							</a>
+							<div class="flag__top2">
+								<div class="flag2">
+									<h6 class="month">
+										дек
+									</h6>
+									<p class="date">
+										13
+									</p>
+								</div>
+							</div>
+						</div>
+						<h2 class="title__h2">
+							Заголовок заголовчатый с буквами
+						</h2>
+						<p class="title__p">
+							Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке смешаны с не уникальными
+							данными до степени совершенной.
+						</p>
+					</div>
+					<div class="title__grid1">
+						<div class="title__photo2 title__photo_1">
+							<a href="#!" class="">
+							</a>
+							<div class="flag__top2">
+								<div class="flag2">
+									<h6 class="month">
+										сен
+									</h6>
+									<p class="date">
+										20
+									</p>
+								</div>
+							</div>
+						</div>
+						<h2 class="title__h2">
+							Заголовок заголовчатый с буквами
+						</h2>
+						<p class="title__p">
+							Приятно, граждане, наблюдать, как сторонники тоталитаризма в науке смешаны с не уникальными
+							данными до степени совершенной.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="wrapper-footer">
+			<div class="footer__grids">
+				<div class="footer__grid">
+					<div class="logo__footer">
+						<img src="./img/svg/Logo.svg" alt="logo">
+					</div>
+					<p class="text__footer display_none_tuta">
+						Логинова Светлана Васильевна — детский психолог в&nbsp;Новосибирске. Индивидуальные
+						консультации, тренинги для родителей. Современные и научно -обоснованные методы.
+						Конфиденциальность.
+					</p>
+					<div class="footer_otstup_top">
+						<div class="footer__phone1">
+							<a href="#!" class="footer__phone2">
+								<h3 class="footer__phone">
+									8-923-196-15-70
+								</h3>
+							</a>
+						</div>
+						<div class="footer__email">
+							<a href="#!" class="footer__email1">
+								<h3 class="footer__email2">
+									loginovasvv@mail.ru
+								</h3>
+							</a>
+						</div>
+					</div>
+					<p class="text__footer display_none_tama">
+						Логинова Светлана Васильевна — детский психолог в Новосибирске. Индивидуальные консультации,
+						тренинги для родителей. Современные и научно -обоснованные методы. Конфиденциальность.
+					</p>
+				</div>
+				<div class="footer__grid">
+					<div class="footer__grid2">
+						<h1 class="footer__h1_card2">
+							Последние статьи
+						</h1>
+					</div>
+					<div class="footer__title">
+						<div class="img__text">
+							<h4 class="footer__txt">
+								Гайд для родителей: как за 30 минут в день улучшить отношения с ребёнком
+							</h4>
+							<p class="footer__date">
+								15.09.2020
+							</p>
+						</div>
+					</div>
+					<div class="footer__title">
+						<div class="img__text">
+							<h4 class="footer__txt">
+								Как помочь ребенку стать более устойчивым к стрессам?
+							</h4>
+							<p class="footer__date">
+								15.09.2020
+							</p>
+						</div>
+					</div>
+					<div class="footer__title">
+						<div class="img__text">
+							<h4 class="footer__txt">
+								Подростковый возраст: с какими трудностями сталкиваются подростки и их родители, и как
+								их преодолеть.
+							</h4>
+							<p class="footer__date">
+								15.09.2020
+							</p>
+						</div>
+					</div>
+					<div class="footer__title">
+						<div class="img__text">
+							<h4 class="footer__txt">
+								Гайд для родителей: как за 30 минут в день улучшить отношения с ребёнком
+							</h4>
+							<p class="footer__date">
+								15.09.2020
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer__grid">
+					<div class="footer__grid3">
+						<h1 class="grid3__h1">
+							Записаться на консультацию
+						</h1>
+					</div>
+					<form action="" @submit.prevent="submit">
+						<input type="text" class="form" placeholder="Имя">
+						<input required v-model="phone" type="tel" class="form" placeholder="Телефон">
+						<input required v-model="mail" type="email" class="form" placeholder="E-mail">
+						<div class="btn__flex">
+							<button type="submit" class="button button_footer">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<footer class="footer__bottom">
+		<div class="wrapper-footer-2">
+			<div class="footer__bot">
+				<h1 class="footer__h1">
+					Логинова Светлана – детский и семейный психолог
+				</h1>
+				<div class="main_displau_flex">
+					<div class="main-back" onmouseover="myFunction()"></div>
+
+					<p class="zagolovok" onmouseover="myFunction()">Меню сайта</p>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Обо мне</a>
+						</li>
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Отзывы</a>
+						</li>
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Услуги и цены</a>
+						</li>
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Методы</a>
+						</li>
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Видеолекции</a>
+						</li>
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Статьи</a>
+						</li>
+						<li class="footer__item">
+							<a href="#!" class="footer__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
+<script>
+	function myFunction() {
+		document.getElementById("checkbox").checked = true;
+
+	}
+	function mainblack() {
+		if (document.getElementById('checkbox').checked) {
+			document.querySelectorAll("#line-mob-line").forEach(v => v.style.background = "#0e2431");
+		} else {
+			document.querySelectorAll("#line-mob-line").forEach(v => v.style.background = "#FCFCFC");
+		}
+	}
+
+
+	$(window).scroll(function () {
+		if ($(document).scrollTop() > 1) {
+			document.getElementById('header-mob-bar').classList.add("letsScroll_scrolled");
+			document.getElementById('header-mob-bar').classList.remove("letsScroll_scrolled_none");
+			document.getElementById('header__VK__link').classList.add("header__VK__link_fix");
+			document.getElementById('header__VK__link').classList.remove("header__VK__link");
+			document.getElementById("phone").src = "./img/svg/Vector_(5).png";
+			document.getElementById('number').classList.add("number_fix");
+			document.getElementById('number').classList.remove("number");
+			document.getElementById('text__logo__h1').classList.remove("text__logo__h1");
+			document.getElementById('text__logo__h1').classList.add("text__logo__h1_fix");
+			document.getElementById('logo__text').classList.remove("logo__text");
+			document.getElementById('logo__text').classList.add("logo__text_fix");
+			document.getElementById('header_fix').classList.add("header_fix");
+			document.querySelectorAll(".header__link").forEach(v => v.style.color = "#303030");
+			document.querySelectorAll("#line-mob-line").forEach(v => v.style.background = "#0e2431");
+
+
+
+
+
+
+		}
+		else {
+			document.getElementById('header-mob-bar').classList.add("letsScroll_scrolled_none");
+			document.getElementById('header-mob-bar').classList.remove("letsScroll_scrolled");
+			document.getElementById('header__VK__link').classList.remove("header__VK__link_fix");
+			document.getElementById('header__VK__link').classList.add("header__VK__link");
+			document.getElementById('number').classList.remove("number_fix");
+			document.getElementById('number').classList.add("number");
+			document.getElementById("phone").src = "./img/svg/Phone.svg";
+			document.getElementById('text__logo__h1').classList.add("text__logo__h1");
+			document.getElementById('text__logo__h1').classList.remove("text__logo__h1_fix");
+			document.getElementById('logo__text').classList.add("logo__text");
+			document.getElementById('logo__text').classList.remove("logo__text_fix");
+			document.getElementById('header_fix').classList.remove("header_fix");
+			document.querySelectorAll(".header__link").forEach(v => v.style.color = "white");
+			document.querySelectorAll("#line-mob-line").forEach(v => v.style.background = "#FCFCFC");
+
+
+
+
+
+		}
+	});
+</script>
